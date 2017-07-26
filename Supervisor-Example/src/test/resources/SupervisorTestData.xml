@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Conf [
+<!ELEMENT Conf (Data+)>
+<!ATTLIST Data environment CDATA #REQUIRED>
+<!ELEMENT Data (Pages)>
+<!ELEMENT Pages (Page+)>
+<!ATTLIST Page name CDATA #REQUIRED>
+]>
+
+<Conf>
+	
+	<Data environment="live">
+		<Pages>
+			<Page name="Supervisor">
+				<supervisorurl>http://16.150.57.114:150/zantaz/logon/</supervisorurl>
+				<user>scadmin</user>
+				<password>scadmin</password>
+                                                                                <Homelink>home</Homelink>
+			</Page>
+		</Pages>
+	</Data>
+
+	<Data environment="live">
+		<Pages>
+			<Page name="Supervisor">
+				<supervisorurl>http://16.150.57.114:150/zantaz/logon/</supervisorurl>
+				<user>gokul</user>
+				<password>gokul</password>
+                                                                                <Homelink>home</Homelink>
+			</Page>
+		</Pages>
+	</Data>
+
+</Conf>
